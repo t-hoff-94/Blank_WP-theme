@@ -1,0 +1,68 @@
+@mixin atSmall {
+  @media (min-width: 530px) { @content; }
+}
+@mixin atSmallMedium {
+  @media (min-width: 768px) { @content; }
+}
+@mixin atMedium {
+  @media (min-width: 960px) { @content; }
+}
+
+
+$brown: #4a3f08;
+$beige: #e5e1cf;
+$mainYellow: #F4D35E;
+$mainBlue: #0D3B66;
+$lightOrange: #EE964B;
+$darkOrange: #F95738;
+$lightGreen: #a5cdb2;
+$treeGreen: #469961;
+//import style components
+@import 'css/utility';
+@import 'css/normalize';
+@import 'css/site-header';
+@import 'css/slick-slider';
+@import 'css/slick_github';
+@import 'css/main-navigation';
+@import 'css/page-banner';
+@import 'css/headline';
+@import 'css/btn';
+@import 'css/site-footer';
+@import 'css/full-width-split';
+@import 'css/event-summary';
+@import 'css/card';
+@import 'css/metabox';
+@import 'css/login';
+@import 'css/generic-content';
+@import 'css/search-overlay';
+@import 'css/post-item';
+@import 'css/shame';
+
+
+body {
+  color: $brown;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: $mainBlue;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p, ul, ol {
+  margin: 0 0 1.65em 0;
+}
+
+p, li {
+  line-height: 1.65;
+}
